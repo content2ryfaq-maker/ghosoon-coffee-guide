@@ -4,33 +4,102 @@
     <meta name="google-site-verification" content="lwRx0gXyvYrFDuKZQ37HyL0O1EMKS0vsy15kMXj77rE" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمصة غصون البن | القهوة المختصة الأصلية</title>
+    <title>محمصة غصون البن | القهوة المختصة كما لم تذوقها من قبل</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fcf9f5; color: #4e342e; text-align: center; padding: 20px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #6d4c41; }
-        .btn { display: inline-block; background: #8d6e63; color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; margin-top: 20px; font-weight: bold; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 15px 0; background: #fdf5e6; padding: 10px; border-radius: 8px; border-right: 5px solid #8d6e63; }
-        a { color: #5d4037; text-decoration: none; font-weight: 600; }
+        /* إعدادات المتجر الأساسية - ألوان قهوة عميقة وفاخرة */
+        body { font-family: 'Tajawal', sans-serif; background-color: #f7f2eb; color: #3c2419; text-align: center; margin: 0; padding: 0; }
+        h1, h2, h3 { color: #5d4037; font-weight: 700; }
+        
+        /* القسم الأول - الـ Hero (خلفية بنية كاملة) */
+        .hero { background: #3e2723 url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3D%2F%2Fwww.w3.org%2F200%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2010L190%2010L190%20190L10%20190ZM100%2060C60%2060%2060%20140%20100%20140M100%2060C140%2060%20140%20140%20100%20140%22%20stroke%3D%22%232a1b18%22%20stroke-width%3D%222%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%2E') repeat; color: white; padding: 120px 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); margin-bottom: 60px; }
+        .hero h1 { color: #f7f2eb; font-size: 3.5em; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); margin-bottom: 20px; }
+        .hero p { font-size: 1.4em; max-width: 700px; margin: 0 auto; color: #d7ccc8; }
+        
+        /* الكوبون - تصميم لافت للنظر للخصم */
+        .coupon-box { display: inline-block; background-color: #8d6e63; color: white; padding: 20px 40px; border-radius: 10px; margin-top: 30px; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        
+        /* القسم الثاني - المنتجات (على شكل كروت) */
+        .grid-section { max-width: 1100px; margin: 0 auto 80px; padding: 0 20px; text-align: right; }
+        .grid-title { text-align: center; font-size: 2.2em; margin-bottom: 50px; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        /* تصميم الكارت الواحد */
+        .product-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; border-right: 5px solid #8d6e63; text-align: center;}
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        .product-card h3 { font-size: 1.6em; color: #5d4037; }
+        .product-card p { color: #6d4c41; margin-bottom: 20px; }
+        .product-card-link { display: inline-block; background: #6d4c41; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; }
+        
+        /* الفوتر - تصميم نهائي نظيف */
+        footer { background: #3e2723; color: #f7f2eb; padding: 60px 20px; margin-top: 80px; }
+        footer h2 { color: #d7ccc8; font-size: 2.5em; margin-bottom: 30px; }
+        footer p { color: #a1887f; }
+        
+        /* تصميم الموبايل */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .grid-title { font-size: 1.8em; }
+            .hero p { font-size: 1.1em; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="hero">
         <h1>☕ محمصة غصون البن</h1>
-        <p>رحلة القهوة المختصة تبدأ من هنا. جودة، طزاجة، ونكهة لا تُنسى.</p>
-        
-        <h3>استكشف مجموعتنا المختارة:</h3>
-        <ul>
-            <li><a href="https://gsswn-albn.com/حبوب-بن-خضراء/c829698947">حبوب بن خضراء</a></li>
-            <li><a href="https://gsswn-albn.com/محاصيل-القهوة-المختصة/c1205938290">أجود محاصيل القهوة المختصة</a></li>
-            <li><a href="https://gsswn-albn.com/كبسولات-قهوة-ايطالية/c720425868">كبسولات قهوة إيطالية فاخرة</a></li>
-            <li><a href="https://gsswn-albn.com/قهوة-مختصة-كولومبي-افريسا-كاستيلو-250-جرام/p1975602158">قهوة كولومبية كاستيلو 250جم</a></li>
-            <li><a href="https://gsswn-albn.com/قهوة-مختصة-برازيلي-سيرادو-1kg/p2068417446">قهوة برازيلية سيرادو 1كجم</a></li>
-            <li><a href="https://gsswn-albn.com/قهوة-عربية/c612864863">قهوة عربية سريعة التحضير</a></li>
-        </ul>
-        
-        <a href="https://gsswn-albn.com/" class="btn">تصفح متجرنا الرسمي الآن</a>
+        <p>اكتشف عالم القهوة المختصة كما لم تذوقها من قبل. نحن ننتقي أجود المحاصيل العالمية من أجلك.</p>
+        <div class="coupon-box">حصرياً: استخدم كود "COFFEE15" لخصم 15%</div>
     </div>
+    
+    <div class="grid-section">
+        <h2 class="grid-title">استكشف دليلك لأفضل القهوة</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <h3>حبوب بن خضراء</h3>
+                <p>الخيارات الأجود لعشاق التحميص المنزلي والمحترفين.</p>
+                <a href="https://gsswn-albn.com/حبوب-بن-خضراء/c829698947" class="product-card-link">تسوق الآن</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>محاصيل مختصة</h3>
+                <p>تميز في كل كوب مع نكهات عميقة ومختارة بعناية.</p>
+                <a href="https://gsswn-albn.com/محاصيل-القهوة-المختصة/c1205938290" class="product-card-link">تسوق الآن</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>كبسولات إيطالية</h3>
+                <p>كبسولات فاخرة متوافقة مع نسبريسو لتجربة الكافيهات.</p>
+                <a href="https://gsswn-albn.com/كبسولات-قهوة-ايطالية/c720425868" class="product-card-link">تسوق الآن</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>قهوة كولومبية</h3>
+                <p>النكهة الغنية والقوام المتماسك لواحد من أفضل المحاصيل.</p>
+                <a href="https://gsswn-albn.com/قهوة-مختصة-كولومبي-افريسا-كاستيلو-250-جرام/p1975602158" class="product-card-link">تسوق الآن</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>قهوة برازيلية</h3>
+                <p>قهوتك اليومية المثالية بنكهات متوازنة (سيرادو 1كجم).</p>
+                <a href="https://gsswn-albn.com/قهوة-مختصة-برازيلي-سيرادو-1kg/p2068417446" class="product-card-link">تسوق الآن</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>قهوة عربية</h3>
+                <p>سريعة التحضير للحفاظ على التقاليد والجودة العالية.</p>
+                <a href="https://gsswn-albn.com/قهوة-عربية/c612864863" class="product-card-link">تسوق الآن</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <h2>شكراً لاختيارك الجودة</h2>
+        <p>زوروا متجرنا الرسمي: <a href="https://gsswn-albn.com/" style="color: #d7ccc8; text-decoration: underline;">www.gsswn-albn.com</a></p>
+    </footer>
 </body>
 </html>
